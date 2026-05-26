@@ -11,7 +11,6 @@ interface NavbarProps {
   isDark: boolean
   onToggleTheme: () => void
   isProfessional: boolean
-  isCreative: boolean
   onToggleMode: () => void
 }
 
@@ -19,7 +18,6 @@ export function Navbar({
   isDark, 
   onToggleTheme, 
   isProfessional, 
-  isCreative, 
   onToggleMode 
 }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
