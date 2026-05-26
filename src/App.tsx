@@ -8,7 +8,7 @@ import { useTheme } from './hooks/useTheme'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const { isDark, toggleTheme, isProfessional, isCreative, toggleMode } = useTheme()
+  const { isDark, toggleTheme, isProfessional, toggleMode } = useTheme()
 
   return (
     <>
@@ -21,7 +21,6 @@ function App() {
           isDark={isDark} 
           onToggleTheme={toggleTheme} 
           isProfessional={isProfessional}
-          isCreative={isCreative}
           onToggleMode={toggleMode}
         >
           <HomePage />

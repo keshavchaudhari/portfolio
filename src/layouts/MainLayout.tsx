@@ -11,7 +11,6 @@ interface MainLayoutProps {
   isDark: boolean
   onToggleTheme: () => void
   isProfessional: boolean
-  isCreative: boolean
   onToggleMode: () => void
 }
 
@@ -20,7 +19,6 @@ export function MainLayout({
   isDark, 
   onToggleTheme, 
   isProfessional, 
-  isCreative, 
   onToggleMode 
 }: MainLayoutProps) {
   return (
@@ -32,7 +30,6 @@ export function MainLayout({
         isDark={isDark} 
         onToggleTheme={onToggleTheme} 
         isProfessional={isProfessional}
-        isCreative={isCreative}
         onToggleMode={onToggleMode}
       />
       <main className="relative z-10">{children}</main>
